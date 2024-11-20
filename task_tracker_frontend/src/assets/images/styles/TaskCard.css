@@ -1,0 +1,61 @@
+/* Main task card styling */
+.task-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply strike-through only to completed title and description */
+.task-card h3.completed,
+.task-card p.completed {
+    text-decoration: line-through;
+    color: #888; /* Optional: Gray color to indicate completion */
+}
+
+/* Task actions container */
+.task-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+/* Button styling */
+.task-actions button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.task-actions button:hover {
+    background-color: #0056b3;
+}
+
+.task-actions button:nth-child(2) {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.task-actions button:nth-child(2):hover {
+    background-color: #e0a800;
+}
+
+.task-actions button:nth-child(3) {
+    background-color: #dc3545;
+}
+
+.task-actions button:nth-child(3):hover {
+    background-color: #c82333;
+}
